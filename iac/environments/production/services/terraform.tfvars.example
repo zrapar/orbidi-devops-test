@@ -1,0 +1,7 @@
+cloudflare_api_token = ""
+tf_backend_core_key = "environments/{ENVIRONMENT_NAME}/core/terraform.tfstate"
+tf_backend_data_key = "environments/{ENVIRONMENT_NAME}/data/terraform.tfstate"
+aws_s3_backend_bucket     = ""
+aws_s3_backend_region     = ""
+aws_s3_backend_access_key = ""
+aws_s3_backend_secret_key = ""

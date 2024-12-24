@@ -1,0 +1,6 @@
+tf_backend_core_key = "environments/{ENVIRONMENT_NAME}/core/terraform.tfstate"
+
+aws_s3_backend_bucket     = ""
+aws_s3_backend_region     = ""
+aws_s3_backend_access_key = ""
+aws_s3_backend_secret_key = ""

@@ -1,0 +1,49 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "AutoScaling",
+      "Effect": "Allow",
+      "Action": [
+        "autoscaling:DescribeAutoScalingGroups",
+        "autoscaling:DescribeAutoScalingInstances",
+        "autoscaling:DescribeLoadBalancers",
+        "autoscaling:DescribePolicies",
+        "autoscaling:DescribeTags",
+        "autoscaling:AttachInstances",
+        "autoscaling:AttachLoadBalancers",
+        "autoscaling:AttachLoadBalancerTargetGroups",
+        "autoscaling:CreateAutoScalingGroup",
+        "autoscaling:CreateLaunchConfiguration",
+        "autoscaling:DeleteAutoScalingGroup",
+        "autoscaling:DeleteLaunchConfiguration",
+        "autoscaling:DeletePolicy",
+        "autoscaling:DetachInstances",
+        "autoscaling:DetachLoadBalancers",
+        "autoscaling:DetachLoadBalancerTargetGroups",
+        "autoscaling:PutScalingPolicy",
+        "autoscaling:RollbackInstanceRefresh",
+        "autoscaling:SetDesiredCapacity",
+        "autoscaling:SetInstanceHealth",
+        "autoscaling:TerminateInstanceInAutoScalingGroup",
+        "autoscaling:UpdateAutoScalingGroup",
+        "autoscaling:CreateOrUpdateTags",
+        "autoscaling:DeleteTags",
+        "application-autoscaling:RegisterScalableTarget",
+        "application-autoscaling:TagResource",
+        "application-autoscaling:DescribeScalableTargets",
+        "application-autoscaling:ListTagsForResource",
+        "application-autoscaling:DeregisterScalableTarget",
+        "application-autoscaling:PutScalingPolicy",
+        "application-autoscaling:DescribeScalingPolicies",
+        "application-autoscaling:DeleteScalingPolicy",
+        "autoscaling:SetInstanceProtection",
+        "autoscaling:DescribeScalingActivities",
+        "ssm:GetParameter"
+      ],
+      "Resource": [
+        "*"
+      ]
+    }
+  ]
+}

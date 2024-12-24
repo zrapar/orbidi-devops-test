@@ -1,0 +1,64 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ECS",
+      "Effect": "Allow",
+      "Action": [
+        "ecs:List*",
+        "ecs:Describe*",
+        "ecs:CreateCluster",
+        "ecs:CreateService",
+        "ecs:CreateCapacityProvider",
+        "ecs:DeleteAttributes",
+        "ecs:DeleteCluster",
+        "ecs:DeleteService",
+        "ecs:DeleteTaskSet",
+        "ecs:DeregisterContainerInstance",
+        "ecs:PutAccountSetting",
+        "ecs:PutAttributes",
+        "ecs:RegisterContainerInstance",
+        "ecs:UpdateCluster",
+        "ecs:UpdateClusterSettings",
+        "ecs:UpdateService",
+        "ecs:TagResource",
+        "ecs:UntagResource",
+        "ecs:PutClusterCapacityProviders",
+        "ecs:UpdateCapacityProvider",
+        "ecs:DeleteCapacityProvider"
+      ],
+      "Resource": [
+        "arn:aws:ecs:${AWS_REGION}:${AWS_ACCOUNT_ID}:cluster/*",
+        "arn:aws:ecs:${AWS_REGION}:${AWS_ACCOUNT_ID}:service-deployment/*/*/*",
+        "arn:aws:ecs:${AWS_REGION}:${AWS_ACCOUNT_ID}:task/*/*",
+        "arn:aws:ecs:${AWS_REGION}:${AWS_ACCOUNT_ID}:container-instance/*/*",
+        "arn:aws:ecs:${AWS_REGION}:${AWS_ACCOUNT_ID}:task-definition/*",
+        "arn:aws:ecs:${AWS_REGION}:${AWS_ACCOUNT_ID}:service/*/*",
+        "arn:aws:ecs:${AWS_REGION}:${AWS_ACCOUNT_ID}:task-set/*/*/*",
+        "arn:aws:ecs:${AWS_REGION}:${AWS_ACCOUNT_ID}:service-revision/*/*/*",
+        "arn:aws:ecs:${AWS_REGION}:${AWS_ACCOUNT_ID}:capacity-provider/*"
+      ]
+    },
+    {
+      "Sid": "TaskDefinition",
+      "Effect": "Allow",
+      "Action": ["ecs:*TaskDefinition", "ecs:*TaskDefinitions"],
+      "Resource": ["*"]
+    },
+    {
+      "Sid": "Extras",
+      "Effect": "Allow",
+      "Action": [
+        "servicediscovery:TagResource",
+        "servicediscovery:GetOperation",
+        "servicediscovery:ListTagsForResource",
+        "acm:ImportCertificate",
+        "acm:AddTagsToCertificate",
+        "acm:DescribeCertificate",
+        "acm:ListTagsForCertificate",
+        "acm:DeleteCertificate"
+      ],
+      "Resource": ["*"]
+    }
+  ]
+}

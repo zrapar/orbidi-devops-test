@@ -1,0 +1,9 @@
+terraform_groupname = ""
+
+terraform_backend_groupname = ""
+terraform_backend_username  = ""
+s3_backend_name             = ""
+
+aws_region = ""
+aws_ak     = ""
+aws_sk     = ""

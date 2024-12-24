@@ -1,0 +1,30 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "ECR",
+      "Effect": "Allow",
+      "Action": [
+        "ecr:DescribeImages",
+        "ecr:ListImages",
+        "ecr:DescribeRegistry",
+        "ecr:DescribeRepositories",
+        "ecr:GetAuthorizationToken",
+        "ecr:ListTagsForResource",
+        "ecr:GetRepositoryPolicy",
+        "ecr:GetRegistryPolicy",
+        "ecr:CreateRepository",
+        "ecr:DeleteRepository",
+        "ecr:PutAccountSetting",
+        "ecr:PutImage",
+        "ecr:DeleteRegistryPolicy",
+        "ecr:PutRegistryPolicy",
+        "ecr:SetRepositoryPolicy",
+        "ecr:DeleteRepositoryPolicy",
+        "ecr:TagResource",
+        "ecr:UntagResource"
+      ],
+      "Resource": ["arn:aws:ecr:${AWS_REGION}:${AWS_ACCOUNT_ID}:repository/*"]
+    }
+  ]
+}
